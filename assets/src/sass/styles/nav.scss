@@ -1,0 +1,151 @@
+// File location: assets\src\sass\styles
+.header-main {
+  z-index: 9;
+}
+@include desk-min {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation {
+    ul {
+      display: flex;
+    }
+  }
+  .stick-top .header-version-1 {
+    .header-top {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .stick-main .header-version-1 {
+    .header-main {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .header-version-1 {
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--color-2);
+      padding: 1rem 2.5rem;
+      color: #fff;
+      z-index: 9;
+      .il_btn {
+        line-height: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      div {
+        width: 100%;
+        text-align: center;
+      }
+      &.left {
+        .section_inner {
+          justify-content: left;
+        }
+      }
+      &.middle {
+        .section_inner {
+          justify-content: center;
+        }
+      }
+      &.right {
+        .section_inner {
+          justify-content: right;
+        }
+      }
+    }
+    .header-main {
+      background: linear-gradient(to left, #10005d 0%, #10002a 100%);
+      &-inner {
+        display: flex;
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+        align-items: center;
+        padding: 2rem 0;
+        #primary-menu {
+          justify-content: flex-end;
+          a {
+            padding-left: 2.25rem;
+            color: #fff;
+            font-size: 2.4rem;
+          }
+          li:not(:last-child) {
+            a {
+              padding-right: 2.25rem;
+            }
+          }
+          > li {
+            &.current-menu-item {
+              > a {
+                color: #009688;
+              }
+            }
+            &.menu-item-has-children {
+                > a {
+                  padding-right: 3rem;
+                  display: flex;
+                  &::after {
+                    content: "";
+                    background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    right: 0;
+                    transform: rotate(45deg);
+                    top: -3px;
+                    transition: var(--theme-transition);
+                  }
+                }
+                &:hover {
+                  a:after {
+                    transform: rotate(90deg);
+                  }
+                }
+            }
+            .sub-menu {
+              flex-direction: column;
+              opacity: 0;
+              transition: var(--theme-transition);
+              background: linear-gradient(#062366 0%, #010d28 100%);
+              padding: 2rem 1rem;
+              li {
+                margin-bottom: 1rem;
+              }
+            }
+            &:hover {
+             .sub-menu {
+              opacity: 1;
+             }
+            }
+          }
+        }
+        .logo-wrap {
+          flex: 15% 0 0;
+          line-height: 0;
+          height: 12rem;
+          margin-bottom: -2rem;
+          a {
+            height: 100%;
+            img {
+              height: 100%;
+              object-fit: contain;
+              object-position: left;
+            }
+          }
+        }
+        .nav-button {
+          flex-shrink: 0;
+          margin-left: 3rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

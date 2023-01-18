@@ -1,0 +1,138 @@
+.tg_btns_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+  flex-wrap: wrap;
+  .tg_buttons_prefix {
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+  .il_buttons {
+    margin-top: 0;
+    @include tab-max {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include limbo-min {
+      a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+  @include limbo-max {
+    flex-direction: column;
+    align-items: flex-start;
+    .tg_buttons_prefix {
+      font-size: 16px;
+      margin: 3rem 4rem 0 0;
+    }
+    a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+      margin: 3rem 5.5rem 0rem 0rem;
+    }
+  }
+}
+
+.il_section.style-1 {
+  background-color: #fff;
+  .tg_buttons_prefix {
+    color: #fff;
+  }
+  @include tab-max {
+    padding-bottom: 26rem;
+    ul {
+      padding: 0;
+      margin: 0 0 1.5em 2em;
+    }
+  }
+  .il_block_bg {
+    @include limbo-min {
+      width: var(--site-width);
+      margin-right: 0;
+      margin-left: auto;
+      img {
+        width: 55%;
+        right: 0;
+        left: auto;
+      }
+    }
+    @include tab-max {
+      img {
+        width: fit-content;
+        height: 58rem;
+        top: auto;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    @include limbo-only {
+      img {
+        object-position: left;
+      }
+    }
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+   }
+   @include tab-max {
+    width: 100%;
+   }
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  li {
+      font-size: 2rem;
+      color: #fff;
+      @include limbo-max {
+          font-size: 15px;
+      }
+      &::marker {
+          color: #FEC000;
+      }
+  }
+}
+
+.il_section_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.contact-us-hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .il_block_bg {
+    img {
+      width: fit-content;
+      right: 0;
+      @include limbo-only {
+        width: 50%;
+        object-position: left;
+      }
+    }
+  }
+  .il_section_content {
+    @include desk-min {
+      max-width: 32%;
+      width: 32%;
+    }
+    @include limbo-only {
+      max-width: 50%;
+      width: 50%;
+    }
+    p {
+      font-size: 3rem;
+    }
+  }
+  &:before {
+    content: "";
+    background: url("http://medtech.local/wp-content/uploads/2023/01/Mask-Group-344.png");
+    background-size: cover;
+    position: absolute;
+    width: 9.5rem;
+    height: 25rem;
+    top: 0;
+  }
+}

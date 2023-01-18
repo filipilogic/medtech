@@ -1,0 +1,44 @@
+.il_block.il_our-clients {
+    padding-top: 8rem;
+    @include tab-max {
+        padding-top: 12rem;
+    }
+    .intro_title {
+        text-align: center;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8rem;
+    }
+    .il_our-clients_row {
+        display: flex;
+        flex-wrap: wrap;
+        background: #fff;
+        padding: 2.5rem 9rem;
+        &:first-of-type {
+            padding-top: 9rem;
+        }
+        &:last-child {
+            padding-bottom: 9rem;
+        }
+        .column {
+            text-align: center;
+            @include tab-max {
+                width: 31%;
+            }
+            @include mob-only {
+                width: 100%;
+                img {
+                    max-width: 230px;
+                }
+            }
+            @include desk-min {
+                width: 20%;
+                // filter: grayscale(1);
+                // &:hover {
+                //     filter: none;
+                // }
+            }
+        }
+    }
+}

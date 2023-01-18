@@ -1,0 +1,96 @@
+.site-footer {
+    .footer_main {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        background: linear-gradient(to left, #10005d 0%, #10002a 100%);
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @include tab-max {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            @include tab-only {
+                padding-top: 3rem;
+            }
+            .menu-footer-menu-container {
+                width: 80%;
+                li {
+                    text-align: left !important;
+                    width: 50%;
+                    margin-left: 0 !important;
+                    padding-bottom: 2rem;
+                    a {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+    .footer_logo {
+        max-height: 14rem;
+        margin-top: -1rem;
+        margin-bottom: -4rem;
+        img {
+            max-height: 14rem;
+        }
+        @include tab-max {
+            width: 100%;
+            max-height: 7rem;
+            margin-bottom: 4rem;
+            img {
+                max-height: 7rem;
+            }
+        }
+    }
+    #footer.menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        flex-wrap: wrap;
+        @include tab-max {
+            padding-left: 0px;
+        }
+        @include tab-min {
+            margin-right: 6rem;
+            li {
+                margin-left: 4rem;
+            }
+        }
+        @include mob-only {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding: 0;
+            li {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        li {
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+    }
+    .footer_bottom {
+        text-align: center;
+        color: var(--color-1);
+        opacity: .6;
+        font-size: 18px;
+        @include tab-max {
+            text-align: left;
+        }
+        @include mob-only {
+            font-size: 16px;
+        }
+        p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

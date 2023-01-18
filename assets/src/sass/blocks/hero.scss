@@ -1,0 +1,75 @@
+.il_hero {
+  background-size: cover;
+  display: flex;
+  .il_hero_inner {
+    display: flex;
+    flex-direction: column;
+    div {
+      max-width: 1080px;
+      margin-bottom: 3rem;
+      display: block;
+      color: #fff;
+    }
+  }
+  .intro_title {
+    font-size: 7.2rem;
+    line-height: 1.25;
+    margin-bottom: 0rem;
+    color: #fff;
+    @include desk-min {
+      max-width: 60%;
+    }
+  }
+  .il_hero_subtitle {
+    font-size: 5rem;
+    color: var(--color-3);
+  }
+  .il_buttons {
+    margin-top: 2rem;
+  }
+  .il_btn {
+    padding: 1.5rem 2.2rem;
+    color: #fff;
+    border: 3px solid;
+    font-size: 2.2rem;
+    min-width: 21rem;
+    justify-content: center;
+    transition: var(--theme-transition);
+    position: relative;
+    z-index: 1;
+    &:first-child {
+      color: #fff;
+      border-color: var(--color-3);
+      margin-right: 2.5rem;
+      &:hover {
+        background: var(--color-3);
+      }
+    }
+    &:last-child {
+      color: #fff;
+      border-color: var(--color-2);
+      &:hover {
+        background: var(--color-2);
+      }
+    }
+    &:hover {
+      border-color: transparent;
+    }
+    .il_btn_text {
+      z-index: 2;
+    }
+    .il_btn_icon {
+      display: none;
+    }
+  }
+  &.full-screen {
+    min-height: calc(100vh - 14rem); // With top bar
+    /* min-height: calc(100vh - 10.5rem); */ // Without top bar
+    @include limbo-max {
+      min-height: calc(100vh - 21rem);
+    }
+    .hero_inner {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+// File location: assets\src\sass\styles
+
+
+@include limbo-max {
+    .header-top {
+        display: none;
+    }
+    .header-main {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        height: 105px;
+        background: linear-gradient(to right, #10005d 0%, #10002a 100%);
+        &.nav_open {
+            background: #10002a;
+        }
+        #primary-menu {
+            background: linear-gradient(to top, #10005d 0%, #10002a 100%);
+        }
+    }
+    .header-main-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        overflow: hidden;
+    }
+    .logo-wrap {
+        line-height: 0;
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                height: 145px;
+                margin-top: 18px;
+                width: 161px;
+                max-width: 161px;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+    }
+    .main-navigation {
+        ul {
+            display: none;
+        }
+    }
+    #primary-menu {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 105px);
+        overflow: auto;
+        background: #fff;
+        left: 0;
+        padding: 25px;
+        padding-bottom: 100px;
+        li {
+            a {
+                color: #fff;
+            }
+            > a {
+                padding: 18px 10px;
+                font-size: 20px;
+            }
+            &.current-menu-item {
+                a {
+                    color: #009688;
+                }
+            }
+            &.menu-item-has-children {
+                position: relative;
+                .sub-menu {
+                    a {
+                        font-size: 18px;
+                        padding: 10px 25px;
+                    }
+                }
+                .sub-menu-trigger {
+                    content: "";
+                    width: 66px;
+                    height: 66px;
+                    background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    right: -25px;
+                    top: 0;
+                    z-index: 9;
+                    transition: var(--theme-transition);
+                }
+                &.sub-menu-open {
+                    .sub-menu-trigger {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .nav-button {
+        display: none;
+    }
+    .menu-toggle {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        padding: 0;
+        margin-right: 0;
+        margin-left: auto;
+        outline: none;
+        height: 100%;
+        align-items: center;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+        .line {
+            fill: none;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .line1 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+            stroke: #0067A1;
+          }
+          .line2 {
+            stroke-dasharray: 60 60;
+            stroke-width: 6;
+            stroke: #05B0D6;
+          }
+          .line3 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+            stroke: #009688;
+          }
+        &.menu-opened {
+           .line1 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+            .line2 {
+                stroke-dasharray: 1 60;
+                stroke-dashoffset: -30;
+                stroke-width: 6;
+            }
+            .line3 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+        }
+    }
+
+}
