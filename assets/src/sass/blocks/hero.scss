@@ -32,7 +32,13 @@
     color: #fff;
     border: 3px solid;
     font-size: 2.2rem;
+    @include limbo-max {
+      font-size: 20px;
+    }
     min-width: 21rem;
+    @include tab-max {
+      min-width: 27rem;
+    }
     justify-content: center;
     transition: var(--theme-transition);
     position: relative;

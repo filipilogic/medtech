@@ -66,6 +66,11 @@
         padding-top: 10rem;
         padding-bottom: 10rem;
         .container {
+            @include tab-max {
+                .intro_title {
+                    margin-bottom: 8px;
+                }
+            }
             @include limbo-max {
                 .btn_column {
                     width: fit-content;
@@ -78,8 +83,10 @@
                 .il_logos_inner {
                     width: 87%;
                 }
-                .btn_column {
+                .btn_column:last-child {
                     width: 13%;
+                    display: flex;
+                    justify-content: flex-end;
                 }
             }
         }

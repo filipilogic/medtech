@@ -16,6 +16,14 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<div class="il_block_bg">
+			<?php
+			$size = 'full';
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail($size, array( 'class' => 'inner_page_bg' ));
+			}
+			?>
+		</div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

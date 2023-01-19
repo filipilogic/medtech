@@ -1,10 +1,9 @@
 .il_block.team {
-  padding-top: 8rem;
   @include mob-only {
     padding-bottom: 0;
   }
   .il_section_title {
-    margin-bottom: 8rem;
+    margin-bottom: var(--b-space-4);
     @include limbo-min {
       text-align: center;
     }
@@ -80,7 +79,7 @@
       font-family: Assistant;
       font-weight: bold;
       text-transform: capitalize;
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
       align-items: flex-start;
       @include tab-max {
         font-size: 20px;
@@ -89,7 +88,7 @@
         }
       }
       svg {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         @include mob-only {
           margin-top: 0.9rem;
         }
@@ -196,14 +195,14 @@
 @include limbo-min {
   .il_block.team:after {
     content: "";
-    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/team-bottom-right.svg");
+    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
     position: absolute;
-    width: 36.9rem;
-    height: 52.7rem;
-    right: 0px;
+    width: 61.7rem;
+    height: 45.7rem;
+    right: 15rem;
     bottom: 0px;
     z-index: -1;
   }

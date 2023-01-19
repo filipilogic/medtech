@@ -20,11 +20,14 @@
                 "block_space_1": "Large",
                 "block_space_2": "Small",
                 "block_space_3": "Huge",
+                "block_space_4": "Extra Small",
                 "block_space_1_2": "Large\/Small",
                 "block_space_1_3": "Large\/Huge",
                 "block_space_3_1": "Huge\/Large",
                 "block_space_2_3": "Small\/Huge",
-                "block_space_3_2": "Huge\/Small"
+                "block_space_3_2": "Huge\/Small",
+                "block_space_2_4": "Small\/Extra Small",
+                "block_space_4_2": "Extra Small\/Small"
             },
             "default_value": "block_space_1",
             "return_format": "value",
@@ -81,5 +84,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671883812
+    "modified": 1674049663
 }

@@ -76,7 +76,51 @@ if ( ! empty( $block['className'] ) ) {
 								<?php echo wp_get_attachment_image( $image, $size ); ?>
 							</figure>
 						<?php } ?>
-						<h4 class="member_name"><svg xmlns="http://www.w3.org/2000/svg" width="26.43" height="26.43" viewBox="0 0 26.43 26.43"><path id="Path_1429" data-name="Path 1429" d="M26.43,10.694v5.042a.687.687,0,0,1-.687.687H16.423v9.319a.687.687,0,0,1-.687.687H10.694a.688.688,0,0,1-.687-.687V16.423H.687A.688.688,0,0,1,0,15.736V10.694a.687.687,0,0,1,.687-.687h9.319V.687A.688.688,0,0,1,10.694,0h5.042a.687.687,0,0,1,.687.687v9.319h9.319A.687.687,0,0,1,26.43,10.694Z" fill="#009688"/></svg><?php echo $name; ?></h4>
+						<h4 class="member_name"><svg id="Group_2794" data-name="Group 2794" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.939" height="20.939" viewBox="0 0 20.939 20.939">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1113" data-name="Rectangle 1113" width="20.939" height="20.939" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_1109" data-name="Rectangle 1109" width="20.937" height="20.938" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_1110" data-name="Rectangle 1110" width="18.713" height="6.033" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rectangle_1111" data-name="Rectangle 1111" width="6.033" height="18.713" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2687" data-name="Group 2687" clip-path="url(#clip-path)">
+    <g id="Group_2686" data-name="Group 2686" transform="translate(0 0)">
+      <g id="Group_2685" data-name="Group 2685" clip-path="url(#clip-path)">
+        <g id="Group_2678" data-name="Group 2678" transform="translate(0.002 0)" style="mix-blend-mode: multiply;isolation: isolate">
+          <g id="Group_2677" data-name="Group 2677">
+            <g id="Group_2676" data-name="Group 2676" clip-path="url(#clip-path-3)">
+              <path id="Path_1715" data-name="Path 1715" d="M5.154,20.051l14.9-14.9C22.8,2.406,18.535-1.861,15.785.889l-14.9,14.9C-1.861,18.534,2.4,22.8,5.154,20.051" transform="translate(-0.001 -0.001)" fill="#4274d3"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_2681" data-name="Group 2681" transform="translate(2.119 0.004)" style="mix-blend-mode: multiply;isolation: isolate">
+          <g id="Group_2680" data-name="Group 2680">
+            <g id="Group_2679" data-name="Group 2679" clip-path="url(#clip-path-4)">
+              <path id="Path_1716" data-name="Path 1716" d="M3.02,20.855H15.905c3.882,0,3.888-6.033,0-6.033H3.02c-3.882,0-3.888,6.033,0,6.033" transform="translate(-0.106 -14.822)" fill="#00dcba"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_2684" data-name="Group 2684" transform="translate(14.903 0.107)" style="mix-blend-mode: multiply;isolation: isolate">
+          <g id="Group_2683" data-name="Group 2683">
+            <g id="Group_2682" data-name="Group 2682" clip-path="url(#clip-path-5)">
+              <path id="Path_1717" data-name="Path 1717" d="M6.037,17.907V5.022C6.037,1.14,0,1.134,0,5.022V17.907c0,3.882,6.033,3.888,6.033,0" transform="translate(-0.004 -2.108)" fill="#00dcba"/>
+            </g>
+          </g>
+        </g>
+        <path id="Path_1718" data-name="Path 1718" d="M14.815,3.022a3.022,3.022,0,1,1,3.022,3.022,3.023,3.023,0,0,1-3.022-3.022" transform="translate(-14.815 14.894)" fill="#2c51c6"/>
+      </g>
+    </g>
+  </g>
+</svg>
+<?php echo $name; ?></h4>
 						<span class="member_position"><?php echo $position ?></span>
 					</div>
 					<div class="member_text member_text_<?php echo $item; ?>">

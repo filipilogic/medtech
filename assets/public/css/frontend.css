@@ -15,6 +15,7 @@
   --b-space-1: 14.7rem;
   --b-space-2: 12rem;
   --b-space-3: 23rem;
+  --b-space-4: 8rem;
   --theme-transition: .3s all;
   --site-max-width: 1640px;
 }
@@ -28,6 +29,7 @@
     --site-width: calc(100% - 50px);
     --b-space-1: 10rem;
     --b-space-2: 9rem;
+    --b-space-4: 8rem;
   }
 }
 
@@ -42,6 +44,10 @@ div.block_space_2, main.block_space_2 {
 div.block_space_3, main.block_space_3 {
   padding-top: var(--b-space-3);
   padding-bottom: var(--b-space-3);
+}
+div.block_space_4, main.block_space_4 {
+  padding-top: var(--b-space-4);
+  padding-bottom: var(--b-space-4);
 }
 div.block_space_1_2, main.block_space_1_2 {
   padding-top: var(--b-space-1);
@@ -61,6 +67,14 @@ div.block_space_2_3, main.block_space_2_3 {
 }
 div.block_space_3_2, main.block_space_3_2 {
   padding-top: var(--b-space-3);
+  padding-bottom: var(--b-space-2);
+}
+div.block_space_2_4, main.block_space_2_4 {
+  padding-top: var(--b-space-2);
+  padding-bottom: var(--b-space-4);
+}
+div.block_space_4_2, main.block_space_4_2 {
+  padding-top: var(--b-space-4);
   padding-bottom: var(--b-space-2);
 }
 div.margin-sm, main.margin-sm {
@@ -96,6 +110,19 @@ div.margin-xl, main.margin-xl {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+}
+.il_block_bg .inner_page_bg {
+  height: auto;
+  max-height: 90%;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+@media (max-width: 797.5px) {
+  .il_block_bg .inner_page_bg {
+    height: 50rem;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
 }
 
 .mob_bg {
@@ -164,7 +191,7 @@ a.il_btn svg {
     height: 2.5rem;
   }
 }
-a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+a.il_btn:not(:last-child):not(:only-child) {
   margin-right: 3.5rem;
 }
 
@@ -547,9 +574,6 @@ div.contact-us-hero .il_section_content .wpcf7-form option {
   }
 }
 @media (min-width: 479.6px) {
-  .site-footer #footer.menu {
-    margin-right: 6rem;
-  }
   .site-footer #footer.menu li {
     margin-left: 4rem;
   }
@@ -896,7 +920,7 @@ figure img {
     font-size: 20px;
   }
   #primary-menu li.current-menu-item a {
-    color: #009688;
+    color: #C10AF2;
   }
   #primary-menu li.menu-item-has-children {
     position: relative;
@@ -1042,8 +1066,23 @@ figure img {
   .header-version-1 .header-main-inner #primary-menu li:not(:last-child) a {
     padding-right: 2.25rem;
   }
+  .header-version-1 .header-main-inner #primary-menu > li.current-menu-item {
+    display: flex;
+    justify-content: center;
+  }
   .header-version-1 .header-main-inner #primary-menu > li.current-menu-item > a {
-    color: #009688;
+    color: #C10AF2;
+  }
+  .header-version-1 .header-main-inner #primary-menu > li.current-menu-item:before {
+    content: "";
+    background-image: url(http://medtech.local/wp-content/uploads/2023/01/Ellipse-12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    position: absolute;
+    width: 5.5rem;
+    height: 1.7rem;
+    top: -5.2rem;
   }
   .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children > a {
     padding-right: 3rem;
@@ -2630,7 +2669,12 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #F5F5F5;
+}
+
+.page .site-main {
+  position: relative;
+  overflow: hidden;
 }
 
 hr {
@@ -3414,6 +3458,16 @@ textarea {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 1199.5px) {
+  .il_hero .il_btn {
+    font-size: 20px;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_hero .il_btn {
+    min-width: 27rem;
+  }
+}
 .il_hero .il_btn:first-child {
   color: #fff;
   border-color: var(--color-3);
@@ -3521,6 +3575,11 @@ textarea {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+@media (max-width: 797.5px) {
+  .il_logos.style-1 .container .intro_title {
+    margin-bottom: 8px;
+  }
+}
 @media (max-width: 1199.5px) {
   .il_logos.style-1 .container .btn_column {
     width: -moz-fit-content;
@@ -3536,8 +3595,10 @@ textarea {
   .il_logos.style-1 .container .il_logos_inner {
     width: 87%;
   }
-  .il_logos.style-1 .container .btn_column {
+  .il_logos.style-1 .container .btn_column:last-child {
     width: 13%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .il_logos.style-1 .il_logos_inner .il_logo {
@@ -3566,20 +3627,12 @@ textarea {
   background: transparent;
 }
 
-.il_block.il_our-clients {
-  padding-top: 8rem;
-}
-@media (max-width: 797.5px) {
-  .il_block.il_our-clients {
-    padding-top: 12rem;
-  }
-}
 .il_block.il_our-clients .intro_title {
   text-align: center;
   max-width: 55rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8rem;
+  margin-bottom: var(--b-space-4);
 }
 .il_block.il_our-clients .il_our-clients_row {
   display: flex;
@@ -3613,6 +3666,19 @@ textarea {
   .il_block.il_our-clients .il_our-clients_row .column {
     width: 20%;
   }
+}
+.il_block.il_our-clients:after {
+  content: "";
+  background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 61.7rem;
+  height: 45.7rem;
+  right: 15rem;
+  bottom: 0px;
+  z-index: -1;
 }
 
 .tg_btns_wrap {
@@ -3729,10 +3795,6 @@ textarea {
   justify-content: space-between;
 }
 
-div.contact-us-hero {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 div.contact-us-hero .il_block_bg img {
   width: -moz-fit-content;
   width: fit-content;
@@ -3768,6 +3830,118 @@ div.contact-us-hero:before {
   width: 9.5rem;
   height: 25rem;
   top: 0;
+}
+
+div.vision-mission-section .il_section_title {
+  margin-bottom: var(--b-space-2);
+}
+div.vision-mission-section .il_section_text {
+  color: #fff;
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  div.vision-mission-section .il_section_text {
+    max-width: 55%;
+  }
+}
+@media (min-width: 1199.6px) {
+  div.vision-mission-section .il_section_text {
+    max-width: 40%;
+  }
+}
+
+div.vision-mission-bottom-section {
+  padding: 0;
+}
+@media (min-width: 1199.6px) {
+  div.vision-mission-bottom-section {
+    margin-bottom: var(--b-space-2);
+  }
+}
+@media (max-width: 797.5px) {
+  div.vision-mission-bottom-section .il_block_bg img {
+    height: 50rem;
+    top: 0;
+    bottom: auto;
+  }
+}
+@media (min-width: 797.6px) {
+  div.vision-mission-bottom-section .il_block_bg img {
+    width: 49%;
+  }
+}
+@media (min-width: 1199.6px) {
+  div.vision-mission-bottom-section .il_block_bg {
+    width: var(--site-width);
+    max-width: var(--site-max-width);
+    margin: auto;
+  }
+}
+@media (max-width: 797.5px) {
+  div.vision-mission-bottom-section .il_section_content {
+    padding-top: 58rem;
+    padding-bottom: var(--b-space-2);
+  }
+}
+@media (min-width: 797.6px) {
+  div.vision-mission-bottom-section .il_section_content {
+    width: 51%;
+    margin-left: auto;
+    padding: var(--b-space-2);
+  }
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  div.vision-mission-bottom-section .il_section_content {
+    padding: 8rem 0rem 8rem 8rem;
+  }
+}
+
+div.our-story-hero-section {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: var(--b-space-4) auto;
+  padding: 0;
+}
+div.our-story-hero-section .container {
+  width: unset;
+  max-width: unset;
+}
+div.our-story-hero-section .il_block_bg {
+  z-index: 0;
+}
+@media (max-width: 797.5px) {
+  div.our-story-hero-section .il_block_bg {
+    display: none;
+  }
+}
+div.our-story-hero-section .il_block_bg img {
+  max-width: 48%;
+  max-height: calc(100% - 15.5rem);
+  right: 0;
+  top: 15.5rem;
+  -o-object-position: left;
+     object-position: left;
+}
+div.our-story-hero-section .il_section_title {
+  margin: 0 auto var(--b-space-4) auto;
+}
+@media (min-width: 797.6px) {
+  div.our-story-hero-section .il_section_title {
+    text-align: center;
+  }
+}
+div.our-story-hero-section .il_section_text {
+  padding: 12rem 12rem 5rem 12rem;
+  background: #fff;
+}
+@media (max-width: 797.5px) {
+  div.our-story-hero-section .il_section_text {
+    padding: 8rem 5rem;
+  }
+}
+@media (min-width: 797.6px) {
+  div.our-story-hero-section .il_section_text * {
+    max-width: 52%;
+  }
 }
 
 .il_tabs .il_tabs_nav ul {
@@ -3823,16 +3997,13 @@ div.contact-us-hero:before {
   }
 }
 
-.il_block.team {
-  padding-top: 8rem;
-}
 @media (max-width: 479.5px) {
   .il_block.team {
     padding-bottom: 0;
   }
 }
 .il_block.team .il_section_title {
-  margin-bottom: 8rem;
+  margin-bottom: var(--b-space-4);
 }
 @media (min-width: 797.6px) {
   .il_block.team .il_section_title {
@@ -3924,7 +4095,7 @@ div.contact-us-hero:before {
   font-family: Assistant;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   align-items: flex-start;
 }
 @media (max-width: 797.5px) {
@@ -3936,7 +4107,7 @@ div.contact-us-hero:before {
   }
 }
 .il_team_row .il_team_member .member_name svg {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-right: 1.5rem;
   transition: var(--theme-transition);
 }
@@ -4052,14 +4223,14 @@ div.contact-us-hero:before {
 @media (min-width: 797.6px) {
   .il_block.team:after {
     content: "";
-    background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/team-bottom-right.svg");
+    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
     position: absolute;
-    width: 36.9rem;
-    height: 52.7rem;
-    right: 0px;
+    width: 61.7rem;
+    height: 45.7rem;
+    right: 15rem;
     bottom: 0px;
     z-index: -1;
   }

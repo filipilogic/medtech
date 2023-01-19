@@ -14,6 +14,10 @@ div, main {
     padding-top: var(--b-space-3);
     padding-bottom: var(--b-space-3);
   }
+  &.block_space_4 {
+    padding-top: var(--b-space-4);
+    padding-bottom: var(--b-space-4);
+  }
   &.block_space_1_2 {
     padding-top: var(--b-space-1);
     padding-bottom: var(--b-space-2);
@@ -32,6 +36,14 @@ div, main {
   }
   &.block_space_3_2 {
     padding-top: var(--b-space-3);
+    padding-bottom: var(--b-space-2);
+  }
+  &.block_space_2_4 {
+    padding-top: var(--b-space-2);
+    padding-bottom: var(--b-space-4);
+  }
+  &.block_space_4_2 {
+    padding-top: var(--b-space-4);
     padding-bottom: var(--b-space-2);
   }
   &.margin-sm {
@@ -59,6 +71,16 @@ div, main {
     height: 100%;
     object-fit: cover;
     position: absolute;
+  }
+
+  .inner_page_bg {
+   height: auto;
+   max-height: 90%;
+   object-position: bottom;
+   @include tab-max {
+    height: 50rem;
+    object-position: bottom;
+   }
   }
 
 }
@@ -124,7 +146,7 @@ a.il_btn {
       height: 2.5rem;
     }
   }
-  &:not(:last-child), &:not(:only-child) {
+  &:not(:last-child):not(:only-child) {
     margin-right: 3.5rem;
   }
 }

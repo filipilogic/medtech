@@ -79,8 +79,21 @@
           }
           > li {
             &.current-menu-item {
+              display: flex;
+              justify-content: center;
               > a {
-                color: #009688;
+                color: #C10AF2;
+              }
+              &:before {
+                content: "";
+                background-image: url(http://medtech.local/wp-content/uploads/2023/01/Ellipse-12.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center right;
+                position: absolute;
+                width: 5.5rem;
+                height: 1.7rem;
+                top: -5.2rem;
               }
             }
             &.menu-item-has-children {

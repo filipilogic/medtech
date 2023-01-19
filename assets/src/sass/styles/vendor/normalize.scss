@@ -479,7 +479,12 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #F5F5F5;
+}
+
+.page .site-main {
+  position: relative;
+  overflow: hidden;
 }
 
 hr {
