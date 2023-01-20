@@ -1,9 +1,9 @@
 {
-    "key": "group_63ac1a3209704",
-    "title": "Blog: Hero",
+    "key": "group_63c958d99cb9a",
+    "title": "Blog: Post",
     "fields": [
         {
-            "key": "field_63ac23db5380a",
+            "key": "field_63c958d99f421",
             "label": "Background Image Blog",
             "name": "background_image_large",
             "aria-label": "",
@@ -31,9 +31,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "post_type",
                 "operator": "==",
-                "value": "posts_page"
+                "value": "post"
             }
         ]
     ],
@@ -46,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674139853
+    "modified": 1674139876
 }

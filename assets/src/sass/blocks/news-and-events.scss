@@ -1,0 +1,142 @@
+.il_block.il_news-and-events {
+    margin: var(--b-space-2) 0;
+    .il_block_intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: var(--b-space-4);
+        svg {
+            flex: 1 0 auto;
+            margin-right: 2rem;
+            width: 5rem;
+            height: 5rem;
+        }
+        h2 {
+            flex: 1 0 auto;
+            margin-bottom: 0;
+            line-height: 0;
+        }
+        &:before {
+            content: "";
+            position: relative;
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            background: linear-gradient(to left, rgba(2, 191, 172, 0) 0%, #00ddbd 100%);
+        }
+        &:after {
+            content: "";
+            position: relative;
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            background: linear-gradient(to right, rgba(2, 191, 172, 0) 0%, rgba(2, 191, 172, 0.01) 0.75%, rgba(0, 221, 189, 0.2) 100%);
+            left: 3rem;
+        }
+    }
+    .home-blog-posts {
+        @include limbo-min {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .home-blog-post {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        h3 a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: none;
+        }
+        .il_btn {
+            background: none;
+            padding: 0;
+            min-width: unset;
+            border: 0;
+            .il_btn_text {
+                color: var(--color-3);
+                margin-right: .5rem;
+            }
+            svg {
+                height: 1.5rem;
+            }
+        }
+
+        .post-content {
+            padding: 4rem;
+            @include tab-max {
+                padding: 5rem 6rem;
+            }
+        }
+
+        &:nth-child(1) {
+            h3 {
+                a {
+                    font-size: 4rem;
+                    line-height: 4.5rem;
+                }
+                @include tab-max {
+                    margin-bottom: 1rem;
+                }
+            }
+            img {
+                z-index: -1;
+                @include limbo-min {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            background: linear-gradient(rgba(8, 27, 112, 0) 0%, #081b70 100%);
+            @include tab-max {
+                .post-content {
+                    background: url('http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &:not(:nth-child(1)) {
+            h3 {
+                a {
+                    font-size: 3rem;
+                    line-height: 3.6rem;
+                    @include tab-max {
+                        font-size: 4rem;
+                        line-height: 4.5rem;
+                    }
+                }
+                @include tab-max {
+                    margin-bottom: 1rem;
+                }
+            }
+            .post-content {
+                background: url('http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        @include tab-max {
+            &:not(:last-child) {
+                margin-bottom: 5.5rem;
+            }
+        }
+
+        @include limbo-min {
+            &:nth-child(1) {
+                width: 43%;
+                .post-content {
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            &:not(:nth-child(1)) {
+                width: 26.5%;
+            }
+        }
+    }
+}

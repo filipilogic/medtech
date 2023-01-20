@@ -153,6 +153,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/tabs' );
 	register_block_type( __DIR__ . '/blocks/logos' );
 	register_block_type( __DIR__ . '/blocks/our-clients' );
+	register_block_type( __DIR__ . '/blocks/news-and-events' );
 }
 
 

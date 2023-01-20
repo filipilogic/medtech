@@ -3,39 +3,19 @@
 get_header();
 ?>
 
-<?php 
-	$title = get_field('inner_hero_title');
-	$title_color = get_field('title_color');
-?>
-
-<div class="il_inner_hero">
-				<div class="il_inner_hero_inner">
-					<div class="il_inner_hero_inner_top">
-						<div class="container">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1349 446" class="il_inner_hero_bg_svg">
-							<defs>
-								<clipPath id="clip-path">
-								<rect id="Rectangle_910" data-name="Rectangle 910" width="1349" height="446" transform="translate(-22883 326)" fill="#fff" stroke="#707070" stroke-width="1"/>
-								</clipPath>
-								<linearGradient id="linear-gradient" x1="0.892" y1="0.141" x2="0.037" y2="0.781" gradientUnits="objectBoundingBox">
-								<stop offset="0" stop-color="#06286f"/>
-								<stop offset="1" stop-color="#021031"/>
-								</linearGradient>
-							</defs>
-							<g id="Mask_Group_261" data-name="Mask Group 261" transform="translate(22883 -326)" clip-path="url(#clip-path)">
-								<g id="Group_2117" data-name="Group 2117">
-								<path id="Path_1390" data-name="Path 1390" d="M-20618,267V717l143.924-143.5h897.746l306.342-305.431Z" transform="translate(-2265 53)" fill="url(#linear-gradient)"/>
-								<path id="Path_1391" data-name="Path 1391" d="M-20640.828,737.834l166.74-164.316h900.125l304.969-304.056" transform="translate(-2265.172 53)" fill="none" stroke="#F21971" stroke-width="5"/>
-								</g>
-							</g>
-							</svg>
-							<h1 class="il_inner_hero_title" style="color: var(--color-2);">Knowledge Center</span></h1>
-						</div>
-					</div>
-				</div>
-</div>
-
 	<main id="primary" class="site-main container block_space_1_2">
+		
+		<h1 class="il_inner_hero_title tg_title_1" style="color: var(--color-3);">Knowledge Center</span></h1>
+		<div class="il_block_bg">
+			<?php
+			$post_id = 1377;
+			$bg_img = get_field('background_image_large', $post_id);
+			$size = 'full';
+			if( $bg_img ) {
+				echo wp_get_attachment_image( $bg_img, $size, "",array( 'class' => 'inner_page_bg' ) );
+			}
+			?>
+		</div>
 
 		<?php
 		if ( have_posts() ) :
@@ -54,7 +34,7 @@ get_header();
 								echo wp_trim_words(get_the_content(), 25);
 							} ?>
 						</div>
-						<a class="il_btn" href="<?php echo get_permalink(get_the_ID()) ?>"><span class="il_btn_text">Read More</span><span class="il_btn_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.109" height="29.565" viewBox="0 0 27.109 29.565"><defs><clipPath id="a"><rect width="24.1" height="17.388" fill="#fec000"></rect></clipPath></defs><g transform="translate(12.05 29.565) rotate(-120)" style="isolation:isolate"><g transform="translate(0 0)" style="mix-blend-mode:multiply;isolation:isolate"><g clip-path="url(#a)"><path d="M23.773,11.863H9.918L3.069,0,0,5.316,6.97,17.388h13.94l3.19-5.525h-.326Z" transform="translate(0 0)" fill="#fec000"></path></g></g></g></svg></span></a>
+						<a class="il_btn" href="<?php echo get_permalink(get_the_ID()) ?>"><span class="il_btn_text">Read More</span><span class="il_btn_icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15.437" viewBox="0 0 18 15.437"><path id="Path_1722" data-name="Path 1722" d="M1.082,40.824a1.286,1.286,0,0,0,.223.016H14l-.277.129a2.576,2.576,0,0,0-.728.515L9.437,45.045a1.333,1.333,0,0,0-.187,1.706,1.288,1.288,0,0,0,1.932.167l6.439-6.439a1.288,1.288,0,0,0,0-1.821h0l-6.439-6.439a1.288,1.288,0,0,0-1.932.129,1.333,1.333,0,0,0,.187,1.706l3.555,3.567a2.576,2.576,0,0,0,.644.47l.386.174H1.375A1.333,1.333,0,0,0,.017,39.346,1.288,1.288,0,0,0,1.082,40.824Z" transform="translate(0 -31.842)" fill="#00ddbd"/></svg></span></a>
 						</div>
 						<div class="il_bp_right">
 							<?php the_post_thumbnail(); ?>

@@ -1,10 +1,43 @@
 /* Single */
 
+.single-post {
+    .il_inner_hero_title {
+        text-align: center;
+        margin: var(--b-space-4) 0;
+    }
+}
+
 .post_container {
-    width: 90%;
-    max-width: 1100px;
+    width: var(--site-width);
+    max-width: var(--site-max-width);
     margin: auto;
-    padding-top: var(--b-space-1);
+    background: #fff;
+    .intro_title {
+        text-align: center;
+        padding-top: var(--b-space-2);
+        margin-bottom: 6rem;
+    }
+    .inner_post_container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+    @include desk-min {
+        .intro_title {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+    }
+    .il_block_bg {
+        position: relative;
+        z-index: 0;
+        text-align: center;
+        margin-bottom: 6rem;
+        img {
+            width: fit-content;
+            position: relative;
+        }
+    }
     .date {
         background-color: #F3F3F3;
         font-size: 16px;
@@ -13,7 +46,6 @@
         }
         padding: 8px 13px;
         color: #151515;
-        margin-bottom: 2rem;
         display: inline-block;
     }
     p {
@@ -32,10 +64,14 @@
         font-size: 2.5rem;
     }
 }
+.nav-container {
+    margin-bottom: var(--b-space-2);
+}
 .post-navigation {
-    padding-top: 7.8rem;
     display: block;
-    padding-bottom: 14rem;
+    padding-top: 7.8rem;
+    padding-bottom: 7rem;
+    margin-bottom: 0rem;
 }
 .nav-previous {
     margin-right: 10px;
@@ -52,9 +88,10 @@
         border-radius: 0;
         opacity: 1;
         transition: var(--theme-transition);
-        background-color: var(--color-1);
+        background-color: var(--color-3);
         background-repeat: no-repeat;
         background-position: center;
+        border-radius: 6px;
         width: 4rem;
         height: 4rem;
         background-size: 50%;
@@ -71,10 +108,20 @@
     main {
         padding-top: 0rem;
     }
+    .il_inner_hero_title {
+        text-align: center;
+        margin: var(--b-space-4) 0;
+    }
+    @include tab-max {
+        .inner_page_bg {
+            height: 69rem;
+        }
+    }
     .il_blog_post {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 14rem;
+        margin-bottom: 7.2rem;
+        background: #fff;
         @include mob-only {
             margin-bottom: 11rem;
         }
@@ -87,23 +134,33 @@
         }
         .il_bp_right {
             width: 45%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
        }
        @include tab-max {
         flex-direction: column-reverse;
         .il_bp_right {
-            margin-bottom: 6rem;
+            margin-bottom: 0 6rem 6rem 6rem;
         }
        }
         .il_bp_left {
             display: flex;
             flex-direction: column;
-            @include desk-min {
-                padding-top: 2vh;
+            justify-content: center;
+            @include tab-max {
+                padding: 6rem;
             }
             .il_bp_title {
                 color: var(--color-1);
                 text-decoration: none;
+                .tg_title_1 {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
             }
             .date {
                 background-color: #F3F3F3;
@@ -119,7 +176,7 @@
             }
             .il_bp_text {
                 color: var(--color-1);
-                font-size: 2rem;
+                font-size: 2.4rem;
                 @include mob-only {
                     margin-top: 2rem;
                 }
@@ -129,15 +186,29 @@
                 }
             }
             .il_btn {
-               margin: 3.5rem auto 0 0;
-               @include tab-max {
-                margin: 5rem auto 0 0;
-               }
+               margin-right: auto;
+               border: 0px;
+               padding: 0;
+               min-width: unset;
                color: var(--color-3);
-                svg {
-                    path {
-                        fill: var(--color-3);
-                    }
+               &:hover {
+                background: none;
+               }
+               svg {
+                margin-left: .5rem;
+                height: 1.5rem;
+               }
+            }
+        }
+        @include limbo-min {
+            &:nth-child(odd) {
+                .il_bp_left {
+                    padding: 8rem 0 8rem 8rem;
+                }
+            }
+            &:nth-child(even) {
+                .il_bp_left {
+                    padding: 8rem 8rem 8rem 0;
                 }
             }
         }
@@ -145,39 +216,6 @@
     .posts-navigation .nav-links {
         a {
             font-size: 0;
-        }
-    }
-}
-
-// Inner hero fix
-
-.blog, .single-post {
-    .il_inner_hero_bg img {
-        width: 100% !important;
-    }
-    .il_inner_hero_inner {
-        background-color: transparent !important;
-    }
-}
-
-.blog {
-    .il_inner_hero {
-        min-height: unset;
-    }
-}
-
-.single-post {
-    @include tab-max {
-        .il_inner_hero_inner_top {
-            min-height: 70rem;
-            .mob_bg {
-                height: 63% !important;
-            }
-        }
-        .il_inner_hero_bg_svg {
-            height: 130% !important;
-            top: -51% !important;
-            left: -21% !important;
         }
     }
 }
