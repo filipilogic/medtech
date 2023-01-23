@@ -113,8 +113,8 @@ div.contact-us-hero {
   }
   .il_section_content {
     @include desk-min {
-      max-width: 32%;
-      width: 32%;
+      max-width: 36%;
+      width: 36%;
     }
     @include limbo-only {
       max-width: 50%;
