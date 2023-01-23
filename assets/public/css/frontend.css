@@ -775,7 +775,7 @@ div, p, a {
 }
 @media (max-width: 797.5px) {
   .tg_title_1, .intro_title {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
 }
 @media (min-width: 479.6px) and (max-width: 797.5px) {
@@ -3374,93 +3374,93 @@ textarea {
   font-weight: 500;
 }
 
-.il_columns.taryag-cleanrooms {
+.il_columns.medtech-cleanrooms {
   padding-top: 12rem;
 }
 @media (min-width: 1199.6px) {
-  .il_columns.taryag-cleanrooms {
+  .il_columns.medtech-cleanrooms {
     padding-bottom: 0rem;
   }
 }
-.il_columns.taryag-cleanrooms .il_block_bg img {
+.il_columns.medtech-cleanrooms .il_block_bg img {
   height: 70%;
   -o-object-position: bottom;
      object-position: bottom;
 }
-.il_columns.taryag-cleanrooms .container {
+.il_columns.medtech-cleanrooms .container {
   background: #F5F5F5;
   padding: var(--b-space-2);
 }
 @media (max-width: 479.5px) {
-  .il_columns.taryag-cleanrooms .container {
+  .il_columns.medtech-cleanrooms .container {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
-  .il_columns.taryag-cleanrooms .container {
+  .il_columns.medtech-cleanrooms .container {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 }
-.il_columns.taryag-cleanrooms .il_block_intro .intro_title {
+.il_columns.medtech-cleanrooms .il_block_intro .intro_title {
   margin-bottom: 7rem;
 }
-.il_columns.taryag-cleanrooms.cols-2 .column {
+.il_columns.medtech-cleanrooms.cols-2 .column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.il_columns.taryag-cleanrooms.cols-2 .column:not(:last-child) {
+.il_columns.medtech-cleanrooms.cols-2 .column:not(:last-child) {
   margin-bottom: 6rem;
 }
 @media (max-width: 797.5px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column:not(:last-child) {
+  .il_columns.medtech-cleanrooms.cols-2 .column:not(:last-child) {
     margin-bottom: 7rem;
   }
 }
-.il_columns.taryag-cleanrooms.cols-2 .column .intro_title {
+.il_columns.medtech-cleanrooms.cols-2 .column .intro_title {
   color: #5E0FF4;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 @media (max-width: 479.5px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column .intro_title {
+  .il_columns.medtech-cleanrooms.cols-2 .column .intro_title {
     font-size: 4rem;
   }
 }
 @media (min-width: 479.6px) and (max-width: 797.5px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column .intro_title {
+  .il_columns.medtech-cleanrooms.cols-2 .column .intro_title {
     font-size: 3.5rem;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column .intro_title {
+  .il_columns.medtech-cleanrooms.cols-2 .column .intro_title {
     font-size: 3.3rem;
   }
 }
 @media (min-width: 1199.6px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column .intro_title {
+  .il_columns.medtech-cleanrooms.cols-2 .column .intro_title {
     font-size: 2.8rem;
   }
 }
-.il_columns.taryag-cleanrooms.cols-2 .column .il_col_text {
+.il_columns.medtech-cleanrooms.cols-2 .column .il_col_text {
   color: var(--color-1);
 }
 @media (max-width: 1199.5px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column .il_col_text {
+  .il_columns.medtech-cleanrooms.cols-2 .column .il_col_text {
     margin-top: 4rem;
   }
 }
 @media (min-width: 797.6px) {
-  .il_columns.taryag-cleanrooms.cols-2 .column {
+  .il_columns.medtech-cleanrooms.cols-2 .column {
     width: 43%;
   }
-  .il_columns.taryag-cleanrooms.cols-2 .column:nth-child(2n+1) {
+  .il_columns.medtech-cleanrooms.cols-2 .column:nth-child(2n+1) {
     margin-right: 7%;
   }
 }
-.il_columns.taryag-cleanrooms:before {
+.il_columns.medtech-cleanrooms:before {
   content: "";
   background: url(https://medtechisrael.org.il/wp-content/uploads/2023/01/Mask-Group-340.png);
   background-size: contain;
@@ -3476,7 +3476,7 @@ textarea {
   margin: 0 auto;
 }
 @media (max-width: 797.5px) {
-  .il_columns.taryag-cleanrooms:before {
+  .il_columns.medtech-cleanrooms:before {
     background-size: 35%;
   }
 }
@@ -3763,7 +3763,7 @@ textarea {
   padding: 0;
   min-width: unset;
   border: 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .il_block.il_news-and-events .home-blog-post .il_btn .il_btn_text {
   color: var(--color-3);
