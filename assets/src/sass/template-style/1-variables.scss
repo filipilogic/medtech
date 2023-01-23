@@ -24,6 +24,7 @@
   --b-space-4: 8rem;
 
   --theme-transition: .3s all;
+  scroll-behavior: smooth;
 
   @media (min-width: 797.6px) /* Insert the same width as limbo-min variable */ {
     --site-width: 90%;

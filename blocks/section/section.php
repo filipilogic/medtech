@@ -6,6 +6,11 @@ $stack = get_field_object('stack');
 $margin = get_field_object('margin');
 $padding = get_field_object('padding');
 
+$anchor = '';
+if ( ! empty( $block['anchor'] ) ) {
+    $anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
+}
+
 $class = 'il_block il_section';
 if ( ! empty( $block['className'] ) ) {
     $class .= ' ' . $block['className'];
@@ -24,7 +29,7 @@ if ( ! empty( $padding) ) {
 ?>
 
 
-<div class="<?php echo $class; ?>">
+<div <?php echo $anchor; ?> class="<?php echo $class; ?>">
 <?php get_template_part('components/background'); ?>
 <div class="il_section_inner container">
 <?php if( have_rows('info_box') ): ?>

@@ -17,6 +17,7 @@
   --b-space-3: 23rem;
   --b-space-4: 8rem;
   --theme-transition: .3s all;
+  scroll-behavior: smooth;
   --site-max-width: 1640px;
 }
 @media (min-width: 797.6px) {
@@ -252,6 +253,7 @@ a.il_btn:not(:last-child):not(:only-child) {
   max-width: var(--site-max-width);
   margin: auto;
   background: #fff;
+  overflow: hidden;
 }
 .post_container .intro_title {
   text-align: center;
@@ -3484,7 +3486,7 @@ textarea {
   color: #fff;
 }
 .il_hero .intro_title {
-  font-size: 7.2rem;
+  font-size: 6rem;
   line-height: 1.25;
   margin-bottom: 0rem;
   color: #fff;
@@ -3619,11 +3621,11 @@ textarea {
   }
 }
 .il_logos .il_btn {
-  color: var(--color-4);
+  color: var(--color-3);
   line-height: 1;
 }
 .il_logos .il_btn svg path {
-  fill: var(--color-4);
+  fill: var(--color-3);
 }
 .il_logos.style-1 {
   padding-top: 10rem;
@@ -3741,6 +3743,7 @@ textarea {
   padding: 0;
   min-width: unset;
   border: 0;
+  margin-top: 1rem;
 }
 .il_block.il_news-and-events .home-blog-post .il_btn .il_btn_text {
   color: var(--color-3);
@@ -3805,6 +3808,10 @@ textarea {
   background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:not(:last-child) {
