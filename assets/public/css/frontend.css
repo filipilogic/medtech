@@ -325,11 +325,11 @@ a.il_btn:not(:last-child):not(:only-child) {
   margin-right: 10px;
 }
 .nav-previous a {
-  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg);
+  background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/left-arrow.svg);
 }
 
 .nav-next a {
-  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg);
+  background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/right-arrow.svg);
 }
 
 .nav-previous, .nav-next {
@@ -989,7 +989,7 @@ figure img {
     content: "";
     width: 66px;
     height: 66px;
-    background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+    background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/chevron-right.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -3452,7 +3452,7 @@ textarea {
 }
 .il_columns.taryag-cleanrooms:before {
   content: "";
-  background: url(http://medtech.local/wp-content/uploads/2023/01/Mask-Group-340.png);
+  background: url(https://medtechisrael.org.il/wp-content/uploads/2023/01/Mask-Group-340.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -3789,7 +3789,7 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:nth-child(1) .post-content {
-    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg");
+    background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2830-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -3810,7 +3810,7 @@ textarea {
   }
 }
 .il_block.il_news-and-events .home-blog-post:not(:nth-child(1)) .post-content {
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2830-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -3878,7 +3878,7 @@ textarea {
 }
 .il_block.il_our-clients:after {
   content: "";
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2792.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -4033,7 +4033,7 @@ div.contact-us-hero .il_section_content p {
 }
 div.contact-us-hero:before {
   content: "";
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Mask-Group-344.png");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Mask-Group-344.png");
   background-size: cover;
   position: absolute;
   width: 9.5rem;
@@ -4430,7 +4430,7 @@ div.our-story-hero-section .il_section_text {
 @media (min-width: 797.6px) {
   .il_block.team:after {
     content: "";
-    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
+    background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2792.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;

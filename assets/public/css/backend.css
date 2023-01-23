@@ -459,7 +459,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 .il_columns.taryag-cleanrooms:before {
   content: "";
-  background: url(http://medtech.local/wp-content/uploads/2023/01/Mask-Group-340.png);
+  background: url(https://medtechisrael.org.il/wp-content/uploads/2023/01/Mask-Group-340.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -796,7 +796,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:nth-child(1) .post-content {
-    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg");
+    background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2830-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -817,7 +817,7 @@ a.il_btn:not(:last-child):not(:only-child) {
   }
 }
 .il_block.il_news-and-events .home-blog-post:not(:nth-child(1)) .post-content {
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2830-1.jpg");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2830-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -885,7 +885,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 .il_block.il_our-clients:after {
   content: "";
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2792.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -1040,7 +1040,7 @@ div.contact-us-hero .il_section_content p {
 }
 div.contact-us-hero:before {
   content: "";
-  background: url("http://medtech.local/wp-content/uploads/2023/01/Mask-Group-344.png");
+  background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Mask-Group-344.png");
   background-size: cover;
   position: absolute;
   width: 9.5rem;
@@ -1437,7 +1437,7 @@ div.our-story-hero-section .il_section_text {
 @media (min-width: 797.6px) {
   .il_block.team:after {
     content: "";
-    background: url("http://medtech.local/wp-content/uploads/2023/01/Group-2792.png");
+    background: url("https://medtechisrael.org.il/wp-content/uploads/2023/01/Group-2792.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
