@@ -3870,8 +3870,27 @@ textarea {
 .il_block.il_our-clients .il_our-clients_row:last-child {
   padding-bottom: 9rem;
 }
-.il_block.il_our-clients .il_our-clients_row .column {
-  text-align: center;
+@media (min-width: 797.6px) {
+  .il_block.il_our-clients .il_our-clients_row .column.desk_left {
+    text-align: left;
+  }
+  .il_block.il_our-clients .il_our-clients_row .column.desk_center {
+    text-align: center;
+  }
+  .il_block.il_our-clients .il_our-clients_row .column.desk_right {
+    text-align: right;
+  }
+}
+@media (max-width: 797.5px) {
+  .il_block.il_our-clients .il_our-clients_row .column.mob_left {
+    text-align: left;
+  }
+  .il_block.il_our-clients .il_our-clients_row .column.mob_center {
+    text-align: center;
+  }
+  .il_block.il_our-clients .il_our-clients_row .column.mob_right {
+    text-align: right;
+  }
 }
 @media (max-width: 797.5px) {
   .il_block.il_our-clients .il_our-clients_row .column {

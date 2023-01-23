@@ -18,7 +18,28 @@
             padding-bottom: 9rem;
         }
         .column {
-            text-align: center;
+            @include limbo-min {
+                &.desk_left {
+                    text-align: left;
+                }
+                &.desk_center {
+                    text-align: center;
+                }
+                &.desk_right {
+                    text-align: right;
+                }
+            }
+            @include tab-max {
+                &.mob_left {
+                    text-align: left;
+                }
+                &.mob_center {
+                    text-align: center;
+                }
+                &.mob_right {
+                    text-align: right;
+                }
+            }
             @include tab-max {
                 width: 31%;
             }

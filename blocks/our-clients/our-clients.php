@@ -41,8 +41,13 @@ if ( ! empty( $padding) ) {
                                     $image = get_sub_field('image');
                                     $size = 'full';
 
+                                    $align_desktop = get_sub_field('align_desktop');
+                                    $align_mobile = get_sub_field('align_mobile');
+
+                                    $class = 'il_col column ' . $align_desktop . ' ' . $align_mobile;
+
                                     ?>
-                                    <div class="il_col column">
+                                    <div class="<?php echo $class ?>">
                                         <?php if( $image ) {
                                             echo wp_get_attachment_image( $image, $size );
                                         }
