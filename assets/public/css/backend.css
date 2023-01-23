@@ -973,7 +973,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (max-width: 797.5px) {
   .il_section.style-1 {
-    padding-bottom: 26rem;
+    padding-bottom: 42rem;
   }
   .il_section.style-1 ul {
     padding: 0;
@@ -994,9 +994,8 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (max-width: 797.5px) {
   .il_section.style-1 .il_block_bg img {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 58rem;
+    width: 100%;
+    height: 35rem;
     top: auto;
     bottom: 0;
     right: 0;

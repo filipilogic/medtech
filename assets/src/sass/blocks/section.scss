@@ -39,7 +39,7 @@
     color: #fff;
   }
   @include tab-max {
-    padding-bottom: 26rem;
+    padding-bottom: 42rem;
     ul {
       padding: 0;
       margin: 0 0 1.5em 2em;
@@ -58,8 +58,8 @@
     }
     @include tab-max {
       img {
-        width: fit-content;
-        height: 58rem;
+        width: 100%;
+        height: 35rem;
         top: auto;
         bottom: 0;
         right: 0;
