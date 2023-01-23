@@ -109,6 +109,9 @@ a.il_btn {
   display: inline-flex;
   border-radius: 10px;
   font-size: 20px;
+  @include tab-max {
+    font-size: 16px;
+  }
   min-width: 18rem;
   align-items: center;
   justify-content: center;

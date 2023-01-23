@@ -159,6 +159,11 @@ a.il_btn {
   justify-content: center;
   transition: var(--theme-transition);
 }
+@media (max-width: 797.5px) {
+  a.il_btn {
+    font-size: 16px;
+  }
+}
 a.il_btn:first-child {
   color: var(--color-3);
   border-color: var(--color-3);
@@ -731,12 +736,12 @@ div, p, a {
 }
 @media (max-width: 1199.5px) {
   .site-main p, .site-main a:not(.il_btn), .interface-interface-skeleton__content p, .interface-interface-skeleton__content a:not(.il_btn) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 479.5px) {
   .site-main p, .site-main a:not(.il_btn), .interface-interface-skeleton__content p, .interface-interface-skeleton__content a:not(.il_btn) {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 .site-main p:first-child, .interface-interface-skeleton__content p:first-child {
@@ -767,6 +772,11 @@ div, p, a {
   font-size: 5rem;
   margin-bottom: 4.5rem;
   font-family: Anton;
+}
+@media (max-width: 797.5px) {
+  .tg_title_1, .intro_title {
+    font-size: 5.5rem;
+  }
 }
 @media (min-width: 479.6px) and (max-width: 797.5px) {
   .tg_title_1, .intro_title {

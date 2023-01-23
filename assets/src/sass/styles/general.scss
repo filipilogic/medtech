@@ -43,10 +43,10 @@ div, p, a {
   p, a:not(.il_btn) {
     font-size: 2.4rem;
     @include limbo-max {
-      font-size: 16px;
+      font-size: 18px;
     }
     @include mob-only {
-      font-size: 15px;
+      font-size: 18px;
     }
  }
  p {
@@ -75,6 +75,9 @@ div, p, a {
 font-size: 5rem;
 margin-bottom: 4.5rem;
 font-family: Anton;
+@include tab-max {
+  font-size: 5.5rem;
+}
 @include tab-only {
   margin-bottom: 35px;
 }
