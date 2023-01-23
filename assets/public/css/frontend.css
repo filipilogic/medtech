@@ -3298,7 +3298,7 @@ textarea {
 }
 .il_columns.style-1:before {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+  background: url("https://medtechisrael.org.il/themes/medtech/assets/public/images/line-yellow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -3315,7 +3315,7 @@ textarea {
 }
 .il_columns.style-1:after {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+  background: url("https://medtechisrael.org.il/themes/medtech/assets/public/images/red-yellow-line.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -3484,6 +3484,11 @@ textarea {
   margin-bottom: 3rem;
   display: block;
   color: #fff;
+}
+@media (max-width: 797.5px) {
+  .il_hero .il_hero_inner {
+    margin-top: 7vh;
+  }
 }
 .il_hero .intro_title {
   font-size: 6rem;

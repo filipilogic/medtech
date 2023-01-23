@@ -10,6 +10,9 @@
       display: block;
       color: #fff;
     }
+    @include tab-max {
+      margin-top: 7vh;
+    }
   }
   .intro_title {
     font-size: 6rem;
