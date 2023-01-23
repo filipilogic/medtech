@@ -1131,7 +1131,7 @@ figure img {
   }
   .header-version-1 .header-main-inner #primary-menu > li.current-menu-item:before {
     content: "";
-    background-image: url(http://medtech.local/wp-content/uploads/2023/01/Ellipse-12.png);
+    background-image: url(https://medtechisrael.org.il/wp-content/uploads/2023/01/Ellipse-12.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
@@ -1146,7 +1146,7 @@ figure img {
   }
   .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children > a::after {
     content: "";
-    background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/chevron-right.svg);
+    background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/chevron-right.svg);
     background-repeat: no-repeat;
     background-position: center right;
     position: absolute;
