@@ -3685,6 +3685,11 @@ textarea {
   justify-content: flex-end;
   height: 100%;
 }
+@media (max-width: 797.5px) {
+  .il_logos.style-1 .il_btn {
+    font-size: 20px;
+  }
+}
 .il_logos.style-1 .il_btn .il_btn_text {
   margin-right: 1rem;
 }

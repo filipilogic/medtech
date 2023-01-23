@@ -99,6 +99,9 @@
         .il_btn {
             padding: 0;
             font-size: 22px;
+            @include tab-max {
+                font-size: 20px;
+            }
             color: var(--color-3);
             border: 0px;
             margin-right: 0px;
