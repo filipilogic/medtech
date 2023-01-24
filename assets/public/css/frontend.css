@@ -96,6 +96,11 @@ div.margin-xl, main.margin-xl {
   z-index: 2;
 }
 
+@media (max-width: 797.5px) {
+  .page-id-614 .inner_page_bg {
+    display: none;
+  }
+}
 .il_block_bg {
   position: absolute;
   left: 0;
