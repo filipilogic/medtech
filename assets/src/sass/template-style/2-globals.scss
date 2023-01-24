@@ -65,8 +65,11 @@ div, main {
   z-index: 2;
 }
 @include tab-max {
-  .page-id-614 .inner_page_bg {
-    display: none;
+  .page-id-614 {
+    background: #fff;
+    .inner_page_bg {
+      display: none;
+    }
   }
 }
 .il_block_bg {

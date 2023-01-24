@@ -101,6 +101,9 @@ div.margin-xl, main.margin-xl {
 }
 
 @media (max-width: 797.5px) {
+  .page-id-614 {
+    background: #fff;
+  }
   .page-id-614 .inner_page_bg {
     display: none;
   }
@@ -1111,6 +1114,12 @@ div.vision-mission-section .il_section_text {
     max-width: 40%;
   }
 }
+@media (max-width: 797.5px) {
+  div.vision-mission-section .il_block_bg img {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 
 div.vision-mission-bottom-section {
   padding: 0;
@@ -1118,6 +1127,12 @@ div.vision-mission-bottom-section {
 @media (min-width: 1199.6px) {
   div.vision-mission-bottom-section {
     margin-bottom: var(--b-space-2);
+  }
+}
+@media (max-width: 797.5px) {
+  div.vision-mission-bottom-section .il_block_bg {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 797.5px) {
