@@ -999,6 +999,8 @@ a.il_btn:not(:last-child):not(:only-child) {
     width: 55%;
     right: 0;
     left: auto;
+    -o-object-position: left;
+       object-position: left;
   }
 }
 @media (max-width: 797.5px) {
