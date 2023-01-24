@@ -64,7 +64,7 @@
     }
     @include mob-only {
       width: 85%;
-      margin-left: 0;
+      margin-left: auto;
       margin-right: auto;
     }
     .member_name {
@@ -178,6 +178,7 @@
     padding: 6rem 12rem 8rem 12rem;
     @include tab-max {
       padding: 8rem 8rem 10rem 8rem;
+      margin-bottom: 5rem;
     }
   }
 

@@ -4320,7 +4320,7 @@ div.our-story-hero-section .il_section_text {
 @media (max-width: 479.5px) {
   .il_team_row .il_team_member {
     width: 85%;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
   }
 }
@@ -4453,6 +4453,7 @@ div.our-story-hero-section .il_section_text {
 @media (max-width: 797.5px) {
   .il_team_row .member_text {
     padding: 8rem 8rem 10rem 8rem;
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 479.6px) {
