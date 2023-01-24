@@ -360,6 +360,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 /* Archive */
 .blog main, .archive main {
   padding-top: 0rem;
+  padding-bottom: var(--b-space-2);
 }
 .blog .il_inner_hero_title, .archive .il_inner_hero_title {
   text-align: center;
@@ -2738,7 +2739,7 @@ body {
   background: #F5F5F5;
 }
 
-.page .site-main, .site-main .site-main, .single .site-main {
+.site-main {
   position: relative;
   overflow: hidden;
 }

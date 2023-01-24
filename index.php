@@ -3,9 +3,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main container block_space_1_2">
-		
-		<h1 class="il_inner_hero_title tg_title_1" style="color: var(--color-3);">Knowledge Center</span></h1>
+	<main id="primary" class="site-main">
 		<div class="il_block_bg">
 			<?php
 			$post_id = 1377;
@@ -16,6 +14,9 @@ get_header();
 			}
 			?>
 		</div>
+		<div class="container">
+		
+		<h1 class="il_inner_hero_title tg_title_1" style="color: var(--color-3);">Knowledge Center</span></h1>
 
 		<?php
 		if ( have_posts() ) :
@@ -47,6 +48,7 @@ get_header();
 
 		endif;
 		?>
+		</div>
 
 	</main><!-- #main -->
 
