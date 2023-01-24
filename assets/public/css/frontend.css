@@ -433,6 +433,12 @@ a.il_btn:not(:last-child):not(:only-child) {
   font-size: 4rem;
   line-height: 5rem;
 }
+@media (max-width: 797.5px) {
+  .blog .il_blog_post .il_bp_left .il_bp_title .tg_title_1, .archive .il_blog_post .il_bp_left .il_bp_title .tg_title_1 {
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+  }
+}
 .blog .il_blog_post .il_bp_left .date, .archive .il_blog_post .il_bp_left .date {
   background-color: #F3F3F3;
   font-size: 16px;
@@ -460,7 +466,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (max-width: 1199.5px) {
   .blog .il_blog_post .il_bp_left .il_bp_text, .archive .il_blog_post .il_bp_left .il_bp_text {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .blog .il_blog_post .il_bp_left .il_btn, .archive .il_blog_post .il_bp_left .il_btn {
@@ -3793,8 +3799,8 @@ textarea {
   background: linear-gradient(rgba(8, 27, 112, 0) 0%, #081b70 100%);
 }
 .il_block.il_news-and-events .home-blog-post:nth-child(1) h3 a {
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 5rem;
+  line-height: 5.5rem;
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:nth-child(1) h3 {
@@ -3824,8 +3830,8 @@ textarea {
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:not(:nth-child(1)) h3 a {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
 }
 @media (max-width: 797.5px) {

@@ -794,8 +794,8 @@ a.il_btn:not(:last-child):not(:only-child) {
   background: linear-gradient(rgba(8, 27, 112, 0) 0%, #081b70 100%);
 }
 .il_block.il_news-and-events .home-blog-post:nth-child(1) h3 a {
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 5rem;
+  line-height: 5.5rem;
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:nth-child(1) h3 {
@@ -825,8 +825,8 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (max-width: 797.5px) {
   .il_block.il_news-and-events .home-blog-post:not(:nth-child(1)) h3 a {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
 }
 @media (max-width: 797.5px) {

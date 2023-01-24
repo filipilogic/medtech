@@ -77,8 +77,8 @@
         &:nth-child(1) {
             h3 {
                 a {
-                    font-size: 4rem;
-                    line-height: 4.5rem;
+                    font-size: 5rem;
+                    line-height: 5.5rem;
                 }
                 @include tab-max {
                     margin-bottom: 1rem;
@@ -106,8 +106,8 @@
                     font-size: 3rem;
                     line-height: 3.6rem;
                     @include tab-max {
-                        font-size: 4rem;
-                        line-height: 4.5rem;
+                        font-size: 5rem;
+                        line-height: 5.5rem;
                     }
                 }
                 @include tab-max {

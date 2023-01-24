@@ -162,6 +162,10 @@
                 .tg_title_1 {
                     font-size: 4rem;
                     line-height: 5rem;
+                    @include tab-max {
+                        font-size: 5.5rem;
+                        line-height: 6.5rem;
+                    }
                 }
             }
             .date {
@@ -184,7 +188,7 @@
                 }
                 margin-bottom: 2rem;
                 @include limbo-max {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
             .il_btn {
