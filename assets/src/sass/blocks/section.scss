@@ -101,6 +101,9 @@
 }
 
 div.contact-us-hero {
+  @include tab-max {
+    padding-bottom: 42rem;
+  }
   .il_block_bg {
     img {
       width: fit-content;
@@ -108,6 +111,13 @@ div.contact-us-hero {
       @include limbo-only {
         width: 50%;
         object-position: left;
+      }
+      @include tab-max {
+        width: 100%;
+        height: 35rem;
+        top: auto;
+        bottom: 0;
+        right: 0;
       }
     }
   }

@@ -4037,6 +4037,11 @@ textarea {
   justify-content: space-between;
 }
 
+@media (max-width: 797.5px) {
+  div.contact-us-hero {
+    padding-bottom: 42rem;
+  }
+}
 div.contact-us-hero .il_block_bg img {
   width: -moz-fit-content;
   width: fit-content;
@@ -4047,6 +4052,15 @@ div.contact-us-hero .il_block_bg img {
     width: 50%;
     -o-object-position: left;
        object-position: left;
+  }
+}
+@media (max-width: 797.5px) {
+  div.contact-us-hero .il_block_bg img {
+    width: 100%;
+    height: 35rem;
+    top: auto;
+    bottom: 0;
+    right: 0;
   }
 }
 @media (min-width: 1199.6px) {
