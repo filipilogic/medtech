@@ -193,21 +193,30 @@ div.our-story-hero-section {
   max-width: var(--site-max-width);
   margin: var(--b-space-4) auto;
   padding: 0;
+  @include tab-max {
+    padding-bottom: 34rem;
+  }
   .container {
     width: unset;
     max-width: unset;
   }
   .il_block_bg {
     z-index: 0;
-    @include tab-max {
-      display: none;
-    }
     img {
-      max-width: 48%;
-      max-height: calc(100% - 15.5rem);
-      right: 0;
-      top: 15.5rem;
-      object-position: left;
+      @include limbo-min {
+        max-width: 48%;
+        max-height: calc(100% - 15.5rem);
+        right: 0;
+        top: 15.5rem;
+        object-position: left;
+      }
+      @include tab-max {
+        width: 100%;
+        height: 35rem;
+        top: auto;
+        bottom: 0;
+        right: 0;
+      }
     }
   }
   .il_section_title {

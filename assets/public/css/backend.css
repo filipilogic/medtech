@@ -1145,6 +1145,11 @@ div.our-story-hero-section {
   margin: var(--b-space-4) auto;
   padding: 0;
 }
+@media (max-width: 797.5px) {
+  div.our-story-hero-section {
+    padding-bottom: 34rem;
+  }
+}
 div.our-story-hero-section .container {
   width: unset;
   max-width: unset;
@@ -1152,18 +1157,24 @@ div.our-story-hero-section .container {
 div.our-story-hero-section .il_block_bg {
   z-index: 0;
 }
-@media (max-width: 797.5px) {
-  div.our-story-hero-section .il_block_bg {
-    display: none;
+@media (min-width: 797.6px) {
+  div.our-story-hero-section .il_block_bg img {
+    max-width: 48%;
+    max-height: calc(100% - 15.5rem);
+    right: 0;
+    top: 15.5rem;
+    -o-object-position: left;
+       object-position: left;
   }
 }
-div.our-story-hero-section .il_block_bg img {
-  max-width: 48%;
-  max-height: calc(100% - 15.5rem);
-  right: 0;
-  top: 15.5rem;
-  -o-object-position: left;
-     object-position: left;
+@media (max-width: 797.5px) {
+  div.our-story-hero-section .il_block_bg img {
+    width: 100%;
+    height: 35rem;
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
 }
 div.our-story-hero-section .il_section_title {
   margin: 0 auto var(--b-space-4) auto;
