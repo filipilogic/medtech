@@ -1164,12 +1164,11 @@ figure img {
     width: 20px;
     height: 100%;
     right: 0;
-    transform: rotate(45deg);
-    top: -3px;
+    transform: rotate(270deg);
     transition: var(--theme-transition);
   }
   .header-version-1 .header-main-inner #primary-menu > li.menu-item-has-children:hover a:after {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
   }
   .header-version-1 .header-main-inner #primary-menu > li .sub-menu {
     flex-direction: column;
