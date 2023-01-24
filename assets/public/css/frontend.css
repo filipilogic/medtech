@@ -4100,6 +4100,13 @@ div.contact-us-hero:before {
 div.vision-mission-section .il_section_title {
   margin-bottom: var(--b-space-2);
 }
+@media (max-width: 797.5px) {
+  div.vision-mission-section .il_section_title {
+    max-width: 27rem;
+    margin-bottom: 28px;
+    line-height: 7.5rem;
+  }
+}
 div.vision-mission-section .il_section_text {
   color: #fff;
 }

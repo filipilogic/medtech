@@ -148,6 +148,11 @@ div.contact-us-hero {
 div.vision-mission-section {
   .il_section_title {
     margin-bottom: var(--b-space-2);
+    @include tab-max {
+      max-width: 27rem;
+      margin-bottom: 28px;
+      line-height: 7.5rem;
+    }
   }
   .il_section_text {
     color: #fff;
