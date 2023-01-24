@@ -77,20 +77,20 @@
                 }
                 .sub-menu-trigger {
                     content: "";
-                    width: 66px;
-                    height: 66px;
-                    background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/chevron-right.svg);
+                    width: 16px;
+                    height: 16px;
+                    background-image: url(https://medtechisrael.org.il/wp-content/themes/medtech/assets/icons/arrow-down-sign-to-navigate.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     position: absolute;
-                    right: -25px;
-                    top: 0;
+                    right: -6px;
+                    top: 24px;
                     z-index: 9;
                     transition: var(--theme-transition);
                 }
                 &.sub-menu-open {
                     .sub-menu-trigger {
-                        transform: rotate(90deg);
+                        transform: rotate(180deg);
                     }
                 }
             }
