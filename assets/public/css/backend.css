@@ -873,6 +873,7 @@ a.il_btn:not(:last-child):not(:only-child) {
   flex-wrap: wrap;
   background: #fff;
   padding: 2.5rem 9rem;
+  justify-content: space-between;
 }
 .il_block.il_our-clients .il_our-clients_row:first-of-type {
   padding-top: 9rem;
@@ -917,7 +918,7 @@ a.il_btn:not(:last-child):not(:only-child) {
 }
 @media (min-width: 1199.6px) {
   .il_block.il_our-clients .il_our-clients_row .column {
-    width: 20%;
+    width: 19%;
   }
 }
 .il_block.il_our-clients:after {
