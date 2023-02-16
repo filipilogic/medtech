@@ -574,6 +574,120 @@ div.contact-us-hero .il_section_content .wpcf7-form option {
   padding: 0;
 }
 
+div.careers-bottom-columns .il_col .wpcf7-form p {
+  margin-bottom: 1rem;
+}
+div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit) {
+  width: 100%;
+  border: 0px;
+  padding: 1.45rem 3rem;
+  border: 1px solid rgba(165, 165, 165, 0.3);
+  background: #fff;
+  border-radius: 4px;
+}
+div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit):focus-visible {
+  outline: none;
+}
+div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::-moz-placeholder {
+  font-size: 2rem;
+  color: #8B8B8B;
+  font-weight: 400;
+}
+div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit), div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::placeholder {
+  font-size: 2rem;
+  color: #8B8B8B;
+  font-weight: 400;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::-moz-placeholder {
+    font-size: 16px;
+  }
+  div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit), div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 479.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::-moz-placeholder {
+    font-size: 15px;
+  }
+  div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit), div.careers-bottom-columns .il_col .wpcf7-form input:not(.wpcf7-submit)::placeholder {
+    font-size: 15px;
+  }
+}
+div.careers-bottom-columns .il_col .wpcf7-form input.wpcf7-submit {
+  background: none;
+  color: var(--color-3);
+  border: 3px solid var(--color-3);
+  padding: 0.9em 1.2em;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--theme-transition);
+  border-radius: 10px;
+  min-width: 200px;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form input.wpcf7-submit {
+    font-size: 16px;
+    min-width: 170px;
+  }
+}
+@media (max-width: 479.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form input.wpcf7-submit {
+    font-size: 15px;
+  }
+}
+div.careers-bottom-columns .il_col .wpcf7-form input.wpcf7-submit:hover {
+  color: white;
+  border: 3px solid var(--color-1);
+  background: var(--color-1);
+}
+div.careers-bottom-columns .il_col .wpcf7-form .uploadCV-button {
+  background: #fff;
+  color: var(--color-2);
+  border: 1px solid rgba(94, 15, 244, 0.2);
+  padding: 0.45em 0.9em;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--theme-transition);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 200px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+div.careers-bottom-columns .il_col .wpcf7-form .uploadCV-button img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form .uploadCV-button {
+    font-size: 16px;
+    min-width: 170px;
+  }
+}
+@media (max-width: 479.5px) {
+  div.careers-bottom-columns .il_col .wpcf7-form .uploadCV-button {
+    font-size: 15px;
+  }
+}
+
+.wpcf7-form div.wpcf7-response-output {
+  margin: 30px 0;
+  font-size: 18px;
+}
+.wpcf7-form .wpcf7-spinner {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .site-footer .footer_main {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -3496,6 +3610,116 @@ textarea {
   }
 }
 
+div.careers-bottom-columns {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: 0 auto var(--b-space-4) auto;
+  padding: 10rem 12rem;
+}
+@media (max-width: 797.5px) {
+  div.careers-bottom-columns {
+    padding: 8rem 5rem 5rem 5rem;
+  }
+}
+div.careers-bottom-columns ul {
+  margin-left: 0;
+  padding-left: 2rem;
+}
+div.careers-bottom-columns ul li {
+  font-size: 2.4rem;
+  padding-left: 15px;
+  padding-bottom: 2rem;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns ul li {
+    font-size: 18px;
+  }
+}
+div.careers-bottom-columns ul li::marker {
+  content: url("http://medtech.local/wp-content/uploads/2023/02/Ellipse-26.png");
+}
+div.careers-bottom-columns h2 {
+  font-size: 4rem;
+  color: var(--color-2);
+}
+@media (min-width: 797.6px) and (max-width: 1199.5px) {
+  div.careers-bottom-columns h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 797.5px) {
+  div.careers-bottom-columns h2 {
+    font-size: 6rem;
+  }
+}
+div.careers-bottom-columns .container {
+  width: unset;
+  max-width: unset;
+}
+div.careers-bottom-columns.cols-2 .column {
+  width: 47%;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns.cols-2 .column {
+    width: 100%;
+  }
+}
+div.careers-bottom-columns.cols-2 .column:nth-child(2n+1) {
+  margin-right: 6%;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns.cols-2 .column:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1199.6px) {
+  div.careers-bottom-columns.cols-2 .column:nth-child(2n+1) {
+    padding-right: 7rem;
+  }
+}
+div.careers-bottom-columns a.il_btn:last-child {
+  color: var(--color-3);
+  border-color: var(--color-3);
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 165px;
+}
+div.careers-bottom-columns a.il_btn:last-child:before {
+  content: url("http://medtech.local/wp-content/uploads/2023/02/Group-2879.png");
+  height: 22px;
+}
+div.careers-bottom-columns a.il_btn:hover:last-child {
+  background: #fff;
+}
+div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) {
+  background: #F5F5F5;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 7.5rem 9.5rem;
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) {
+    padding: 7.5rem 5.5rem;
+  }
+}
+div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) h2 {
+  margin-bottom: 3rem;
+  color: var(--color-1);
+}
+@media (max-width: 1199.5px) {
+  div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 1199.6px) {
+  div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) {
+    margin-top: -15.5rem;
+  }
+}
+
 .il_hero {
   background-size: cover;
   display: flex;
@@ -4244,6 +4468,57 @@ div.our-story-hero-section .il_section_text {
 }
 @media (min-width: 797.6px) {
   div.our-story-hero-section .il_section_text * {
+    max-width: 52%;
+  }
+}
+
+div.careers-top-section {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: var(--b-space-4) auto 0 auto;
+  padding: 0;
+}
+div.careers-top-section .container {
+  width: unset;
+  max-width: unset;
+}
+div.careers-top-section .il_block_bg {
+  z-index: 0;
+}
+@media (max-width: 797.5px) {
+  div.careers-top-section .il_block_bg {
+    display: none;
+  }
+}
+@media (min-width: 797.6px) {
+  div.careers-top-section .il_block_bg img {
+    max-width: 48%;
+    max-height: calc(100% - 15.5rem);
+    right: 0;
+    top: 15.5rem;
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+div.careers-top-section .il_section_title {
+  margin: 0 auto var(--b-space-4) auto;
+  text-align: center;
+}
+div.careers-top-section .il_section_text {
+  padding: 12rem;
+  color: #fff;
+  background: #081B70;
+}
+div.careers-top-section .il_section_text h2 {
+  color: var(--color-3);
+}
+@media (max-width: 797.5px) {
+  div.careers-top-section .il_section_text {
+    padding: 8rem 5rem;
+  }
+}
+@media (min-width: 797.6px) {
+  div.careers-top-section .il_section_text * {
     max-width: 52%;
   }
 }

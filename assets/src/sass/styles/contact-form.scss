@@ -57,3 +57,93 @@ div.contact-us-hero .il_section_content .wpcf7-form {
         padding: 0;
     }
 }
+
+div.careers-bottom-columns .il_col .wpcf7-form {
+    p {
+        margin-bottom: 1rem;
+    }
+    input:not(.wpcf7-submit) {
+        width: 100%;
+        border: 0px;
+        padding: 1.45rem 3rem;
+        border: 1px solid rgb(165 165 165 / 30%);
+        background: #fff;
+        border-radius: 4px;
+    }
+    input:not(.wpcf7-submit):focus-visible {
+        outline: none;
+    }
+    input:not(.wpcf7-submit), input:not(.wpcf7-submit)::placeholder {
+        font-size: 2rem;
+        color: #8B8B8B;
+        font-weight: 400;
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.wpcf7-submit {
+        background: none;
+        color: var(--color-3);
+        border: 3px solid var(--color-3);
+        padding: 0.9em 1.2em;
+        margin-top: 2.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--theme-transition);
+        border-radius: 10px;
+        min-width: 200px;
+        @include limbo-max {
+            font-size: 16px;
+            min-width: 170px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.wpcf7-submit:hover {
+        color: white;
+        border: 3px solid var(--color-1);
+        background: var(--color-1);
+    }
+    .uploadCV-button {
+        background: #fff;
+        color: var(--color-2);
+        border: 1px solid rgb(94 15 244 / 20%);
+        padding: 0.45em 0.9em;
+        font-size: 2rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--theme-transition);
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 200px;
+        max-width: fit-content;
+        img {
+            width: fit-content;
+            height: fit-content;
+        }
+        @include limbo-max {
+            font-size: 16px;
+            min-width: 170px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+}
+
+.wpcf7-form {
+    div.wpcf7-response-output {
+        margin: 30px 0;
+        font-size: 18px;
+    }
+    .wpcf7-spinner {
+        width: fit-content;
+        height: fit-content;
+    }
+}

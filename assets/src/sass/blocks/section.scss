@@ -263,3 +263,49 @@ div.our-story-hero-section {
     }
   }
 }
+
+div.careers-top-section {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: var(--b-space-4) auto 0 auto;
+  padding: 0;
+  .container {
+    width: unset;
+    max-width: unset;
+  }
+  .il_block_bg {
+    z-index: 0;
+    @include tab-max {
+      display: none;
+    }
+    img {
+      @include limbo-min {
+        max-width: 48%;
+        max-height: calc(100% - 15.5rem);
+        right: 0;
+        top: 15.5rem;
+        object-position: left;
+      }
+    }
+  }
+  .il_section_title {
+    margin: 0 auto var(--b-space-4) auto;
+    text-align: center;
+  }
+  .il_section_text {
+    padding: 12rem;
+    color: #fff;
+    h2 {
+      color: var(--color-3);
+    }
+    @include tab-max {
+      padding: 8rem 5rem;
+    }
+    background: #081B70;
+    @include limbo-min {
+      & * {
+        max-width: 52%;
+      }
+    }
+  }
+}

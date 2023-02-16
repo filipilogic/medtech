@@ -214,3 +214,91 @@
     margin: 0 auto;
   }
 }
+
+div.careers-bottom-columns {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: 0 auto var(--b-space-4) auto;
+  padding: 10rem 12rem;
+  @include tab-max {
+    padding: 8rem 5rem 5rem 5rem;
+  }
+  ul {
+    margin-left: 0;
+    padding-left: 2rem;
+    li {
+      font-size: 2.4rem;
+      @include limbo-max {
+        font-size: 18px;
+      }
+      padding-left: 15px;
+      padding-bottom: 2rem;
+      &::marker {
+        content: url('http://medtech.local/wp-content/uploads/2023/02/Ellipse-26.png');
+      }
+    }
+  }
+  h2 {
+    font-size: 4rem;
+    @include limbo-only {
+      font-size: 5rem;
+    }
+    @include tab-max {
+      font-size: 6rem;
+    }
+    color: var(--color-2);
+  }
+  .container {
+    width: unset;
+    max-width: unset;
+  }
+  &.cols-2 .column {
+    width: 47%;
+    @include limbo-max {
+      width: 100%;
+    }
+  }
+  &.cols-2 .column:nth-child(2n+1) {
+    margin-right: 6%;
+    @include limbo-max {
+      margin-right: 0;
+    }
+    @include desk-min {
+      padding-right: 7rem;
+    }
+  }
+  a.il_btn:last-child {
+    color: var(--color-3);
+    border-color: var(--color-3);
+    display: flex;
+    max-width: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 165px;
+    &:before {
+      content: url('http://medtech.local/wp-content/uploads/2023/02/Group-2879.png');
+      height: 22px;
+    }
+  }
+  a.il_btn:hover:last-child {
+    background: #fff;
+  }
+  &.cols-2 .column:nth-child(2n+2) {
+    background: #F5F5F5;
+    height: fit-content;
+    padding: 7.5rem 9.5rem;
+    @include limbo-max {
+      padding: 7.5rem 5.5rem;
+    }
+    h2 {
+      margin-bottom: 3rem;
+      color: var(--color-1);
+    }
+    @include limbo-max {
+      margin-top: 8rem;
+    }
+    @include desk-min {
+      margin-top: -15.5rem;
+    }
+  }
+}
