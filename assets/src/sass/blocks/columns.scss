@@ -272,12 +272,12 @@ div.careers-bottom-columns {
     border-color: var(--color-3);
     display: flex;
     max-width: fit-content;
-    justify-content: space-around;
     align-items: center;
     min-width: 165px;
     &:before {
       content: url('https://medtechisrael.org.il/wp-content/uploads/2023/02/Group-2879.png');
       height: 22px;
+      margin-right: 1rem;
     }
   }
   a.il_btn:hover:last-child {

@@ -94,7 +94,7 @@ div.careers-bottom-columns .il_col .wpcf7-form {
         cursor: pointer;
         transition: var(--theme-transition);
         border-radius: 10px;
-        min-width: 200px;
+        min-width: 20rem;
         @include limbo-max {
             font-size: 16px;
             min-width: 170px;
@@ -119,13 +119,14 @@ div.careers-bottom-columns .il_col .wpcf7-form {
         transition: var(--theme-transition);
         border-radius: 4px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        min-width: 200px;
+        min-width: 20rem;
         max-width: fit-content;
         img {
             width: fit-content;
             height: fit-content;
+            margin-right: 1rem;
         }
         @include limbo-max {
             font-size: 16px;
