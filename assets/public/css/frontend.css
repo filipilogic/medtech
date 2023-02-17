@@ -3623,7 +3623,7 @@ div.careers-bottom-columns {
 }
 div.careers-bottom-columns ul {
   margin-left: 0;
-  padding-left: 2rem;
+  padding-left: 20px;
 }
 div.careers-bottom-columns ul li {
   font-size: 2.4rem;
@@ -3636,7 +3636,7 @@ div.careers-bottom-columns ul li {
   }
 }
 div.careers-bottom-columns ul li::marker {
-  content: url("http://medtech.local/wp-content/uploads/2023/02/Ellipse-26.png");
+  content: url("https://medtechisrael.org.il/wp-content/uploads/2023/02/Ellipse-26.png");
 }
 div.careers-bottom-columns h2 {
   font-size: 4rem;
@@ -3688,7 +3688,7 @@ div.careers-bottom-columns a.il_btn:last-child {
   min-width: 165px;
 }
 div.careers-bottom-columns a.il_btn:last-child:before {
-  content: url("http://medtech.local/wp-content/uploads/2023/02/Group-2879.png");
+  content: url("https://medtechisrael.org.il/wp-content/uploads/2023/02/Group-2879.png");
   height: 22px;
 }
 div.careers-bottom-columns a.il_btn:hover:last-child {
@@ -3717,6 +3717,21 @@ div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) h2 {
 @media (min-width: 1199.6px) {
   div.careers-bottom-columns.cols-2 .column:nth-child(2n+2) {
     margin-top: -15.5rem;
+  }
+}
+@media (min-width: 1199.6px) {
+  div.careers-bottom-columns:after {
+    content: "";
+    background: url("https://medtechisrael.org.il/wp-content/uploads/2023/02/Mask-Group-409.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 45.7rem;
+    height: 30.9rem;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
   }
 }
 
