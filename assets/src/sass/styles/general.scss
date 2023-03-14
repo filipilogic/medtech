@@ -32,14 +32,16 @@ html {
     margin-block-end: 0;
     line-height: var(--title-line-height);
     text-transform: uppercase;
-    font-family: Anton;
     font-weight: 400;
   }
 }
-div, p, a {
-    font-family: Assistant;
-}
 .site-main, .interface-interface-skeleton__content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Anton;
+  }
+  div, p, a {
+      font-family: Assistant;
+  }
   p, a:not(.il_btn) {
     font-size: 2.4rem;
     @include limbo-max {

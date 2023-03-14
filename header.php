@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php the_field('body_top_script', 'option') ?> <!-- Head(er) External Code -->
+	<?php the_field('head_script', 'option') ?> <!-- Head(er) External Code -->
 	<?php wp_head(); ?>
 </head>
 
